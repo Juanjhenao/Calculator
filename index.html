@@ -14,10 +14,10 @@
             <div id="previousValue"></div>
             <div id="currentValue"></div>
         </div>
-        <button class="button">C</button>
+        <button onclick="reset()"class="button">C</button>
         
-        <button class="button">.</button>
-        <button class="button large">⌫ </button>
+        <button onclick="executeOperation('-')" class="operator button">-</button>
+        <button onclick="deleteNumber ()" class="button large">⌫ </button>
         
         <button onclick="operate(7)" class="number button">7</button>
         <button onclick="operate(8)" class="number button">8</button>
@@ -32,7 +32,8 @@
         <button onclick="operate(3)" class="number button">3</button>
         
         <button onclick="executeOperation('+')" class="operator button">+</button>
-        <button onclick="executeOperation('-')" class="operator button">-</button>
+        <button onclick="operate(`.`)"class="button">.</button>
+        
         
         <button onclick="operate(0)" class="number button">0</button>
         <button onclick="equals()" class="operator button large">=</button>
