@@ -2,7 +2,6 @@ const currentValue = document.getElementById('currentValue');
 const previousValue = document.getElementById('previousValue');
 
 currentValue.textContent = `0`
-let dot = `.`
 let currentString;
 let previousString;
 
@@ -122,7 +121,7 @@ function deleteNumber (){
     }
 };
 
-document.addEventListener('keydown', (Event) => {
+document.addEventListener('keydown', (Event) => {                           //funcion para teclado
 
    const keyName = Event.key;
 
